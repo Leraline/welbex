@@ -1,0 +1,63 @@
+.purpleBall {
+    top: -2px;
+    left: 868px;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.redBall {
+    top: 83px;
+    left: 519px;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.redBallSmall {
+    top: 547px;
+    left: 851px;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.redLight {
+    top: 251px;
+    left: -102px;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.purpleLight {
+    top: -154px;
+    left: 602px;
+
+    position: absolute;
+    z-index: -1;
+}
+
+
+@media screen and (max-width: 1298px) {
+    .redBall {
+        display: none;
+    }
+
+    .purpleLight {
+        display: none;
+    }
+
+    .purpleBall {
+        display: none;
+    }
+    
+    .redBallSmall {
+        display: none;
+    }
+    
+    .redLight {
+        display: none;
+    }
+
+}
