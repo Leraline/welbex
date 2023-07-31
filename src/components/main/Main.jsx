@@ -1,13 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import mainScreen from './../../assets/other/main_screen.png';
 import './Main.css';
 
 const Main = () => {
 
+    const [isMobile, setIsMobile] = useState(false);
+
+    const handleViewport = () => {
+        if (window.innerWidth < 770) {
+            setIsMobile(true)
+        } else {
+            setIsMobile(false)
+        }
+      }
+      
+    useEffect(() => {
+        window.addEventListener("resize", handleViewport)
+    })
+
     const [bonus, setBonus] = useState([{ title: 'Виджеты', subtitle: '30 готовых решений' },
     { title: 'Dashboard', subtitle: 'с показателями вашего бизнеса' },
     { title: 'Skype Аудит', subtitle: 'отдела продаж и CRM системы' },
     { title: '35 дней', subtitle: 'использования CRM' },]);
+
+    const mobileBonus = ["Skype Аудит", "30 виджетов", "Dashboard", "Месяц AMOCRM"];
 
     return (<div className="main">
         <div className='container'>
@@ -29,7 +45,10 @@ const Main = () => {
                         <span>мы дарим:</span>
                     </div>
                     <div className="consultation__bonus">
-                        {bonus.map(item => <div className='bonus__item'>
+                        {isMobile ? mobileBonus.map((mobileItem, index) => <div key={index} className='bonus__item'>
+                            <span className='bonus__title'>{mobileItem.toUpperCase()}</span>
+                        </div>) :
+                        bonus.map((item, index) => <div key={index} className='bonus__item'>
                             <span className='bonus__title'>{item.title.toUpperCase()}</span>
                             <span className='bonus__subtitle'>{item.subtitle}</span>
                         </div>)}

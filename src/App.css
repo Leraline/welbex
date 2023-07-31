@@ -10,10 +10,28 @@ body {
   padding: 0 150px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 452px) {
   .container {
       padding: 0 15px;
   }
+}
 
+@media (min-width: 1001px) and (max-width: 1299px) { 
+  .container {
+      padding: 0 40px;
+  }
+}
 
+@media (min-width: 453px) and (max-width: 1000px) { 
+  .container {
+      padding: 30px 40px 0;
+
+  }
+}
+
+@media (min-width: 550px) and (max-width: 770px) { 
+  .container {
+      padding: 30px 15% 0;
+
+  }
 }

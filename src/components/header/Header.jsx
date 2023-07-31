@@ -19,7 +19,7 @@ const Header = ({ navigation }) => {
                     </div>
                     <nav className="header__nav">
                         <ul>{navigation
-                            .map(item => <li className='nav__item'>
+                            .map((item, index) => <li key={index} className='nav__item'>
                                 <a href='#!'>{item}</a>
                             </li>)}
                         </ul>
@@ -28,7 +28,7 @@ const Header = ({ navigation }) => {
                         <span>+7 555 555-55-55</span>
                     </div>
                     <div className="header__messangers">
-                        {icons.map(icon => <a href='#!'><img src={icon} alt=''></img></a>)}
+                        {icons.map((icon, index) => <a key={index} href='#!'><img src={icon} alt=''></img></a>)}
                     </div>
                 </div>
             </div>

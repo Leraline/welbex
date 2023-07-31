@@ -39,7 +39,7 @@
 }
 
 
-@media screen and (max-width: 1298px) {
+@media screen and (max-width: 1000px) {
     .redBall {
         display: none;
     }
@@ -60,4 +60,14 @@
         display: none;
     }
 
+}
+
+@media (min-width: 1000px) and (max-width: 1644px) { 
+    .purpleLight {
+        top: -154px;
+        left: 50px;
+    
+        position: absolute;
+        z-index: -1;
+    }
 }

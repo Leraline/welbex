@@ -13,9 +13,6 @@
     flex-direction: column;
     row-gap: 30px;
 
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 1.25;
 }
 
 .text__accent {
@@ -28,6 +25,12 @@
     display: table;
 
     text-transform: uppercase;
+}
+
+.main__title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.25;
 }
 
 .main_subtitle {
@@ -124,17 +127,8 @@
     line-height: normal;
 }
 
-@media screen and (max-width: 500px) {
-    .consultation__button {
-        display: none;
-    }
+@media screen and (max-width: 770px){
 
-    .bonus__subtitle {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1298px){
     .consultation__title {
         justify-content: flex-start; 
     }
@@ -142,6 +136,7 @@
     .main__row {
         flex-direction: column;
         gap: 45px;
+        padding-top: 40px;
     }
 
     .consultation__button {
@@ -150,10 +145,6 @@
 
     .bonus__subtitle {
         display: none;
-    }
-
-    .main {
-        padding-bottom: 60px;
     }
 
     .bonus__title {
@@ -189,11 +180,20 @@
     .consultation__bonus {
         justify-items: start;
         gap: 14px;
+        margin-bottom: 0px;
     }
 
     .text__accent {
         font-size: 36px;
     }
+}
 
+@media screen and (max-width: 1000px){
+    .main {
+        padding-bottom: 63px;
+        background-image: url("../../assets/other/main_screen.png");
+        background-size: cover;
+    }
 
 }
+
