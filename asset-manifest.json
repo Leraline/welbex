@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/welbex/static/css/main.e6b29bfb.css",
+    "main.js": "/welbex/static/js/main.188b16cc.js",
+    "static/media/red_light.png": "/welbex/static/media/red_light.94c3f0e1b260b75e780f.png",
+    "static/media/purple_light.png": "/welbex/static/media/purple_light.dfcd20848ac5f679860d.png",
+    "static/media/main_screen.png": "/welbex/static/media/main_screen.8b01e0451e27289a81ad.png",
+    "static/media/red_ball.png": "/welbex/static/media/red_ball.f899ff3523e676bc0dfb.png",
+    "static/media/purple_ball.png": "/welbex/static/media/purple_ball.48176ecb624a8c210a25.png",
+    "static/media/viber.svg": "/welbex/static/media/viber.c3d7a933a8355b23bc435ff74d3849c1.svg",
+    "static/media/whatsup.svg": "/welbex/static/media/whatsup.cf9c56ecdadaadbb83004223aedc739c.svg",
+    "index.html": "/welbex/index.html",
+    "static/media/telegram.svg": "/welbex/static/media/telegram.54b623a5c721e815ba28e91f39df817a.svg",
+    "main.e6b29bfb.css.map": "/welbex/static/css/main.e6b29bfb.css.map",
+    "main.188b16cc.js.map": "/welbex/static/js/main.188b16cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6b29bfb.css",
+    "static/js/main.188b16cc.js"
+  ]
+}
