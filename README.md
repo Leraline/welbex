@@ -1,3 +1,5 @@
+! Если при открытии через ссылку gitpages вы видите это - обновите страницу, я пока не разобралась как это чинить !
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
