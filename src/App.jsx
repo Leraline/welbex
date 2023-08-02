@@ -23,7 +23,7 @@ const handleViewport = () => {
 
 useEffect(() => {
   window.addEventListener("resize", handleViewport)
-})
+}, [])
 
   return (
     <Background>
